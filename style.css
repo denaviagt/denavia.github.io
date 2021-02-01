@@ -1,0 +1,496 @@
+* {
+     margin: 0;
+     padding: 0;
+     /* box-sizing: border-box; */
+}
+
+body {
+     font-family: sans-serif;
+     margin: 0;
+}
+
+.main {
+     display: table;
+     width: 100%;
+     /* overflow: auto; */
+}
+
+.jumbotron {
+     padding: 10px 200px;
+     height: 85vh;
+     vertical-align: middle !important;
+     display: table-cell !important;
+     color: white;
+     font-size: 40px;
+     background: linear-gradient(rgba(0, 139, 139, 0.5), rgba(0, 139, 139, 0.5)),
+          url(assets/bg.jpg);
+     background-size: cover;
+     /* background-image: url(assets/bg.jpg); */
+     overflow: hidden;
+     text-align: center;
+}
+
+.jumbotron h4 {
+     margin: 20px 0;
+}
+
+header {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+}
+
+nav {
+     display: flex;
+     background-color: rgb(10, 92, 92);
+     justify-content: space-around;
+     /* padding: 20px 0; */
+     height: 10vh;
+     align-items: center;
+     width: 100%;
+}
+
+.navbar {
+     display: flex;
+     list-style: none;
+     width: 40%;
+     justify-content: space-between;
+     background-color: rgb(10, 92, 92);
+     z-index: 100;
+}
+
+.navbar a {
+     text-decoration: none;
+     color: rgb(118, 235, 235);
+}
+
+.navbar a:hover {
+     color: #fff;
+}
+
+.icon div {
+     width: 25px;
+     height: 2px;
+     background-color: rgb(118, 235, 235);
+     margin: 5px;
+
+}
+
+.icon {
+     display: none;
+}
+
+
+.konten {
+     padding: 100px 70px;
+}
+
+.konten h1 {
+     text-align: center;
+     padding-bottom: 40px;
+     font-size: 200%;
+     z-index: -2;
+}
+
+.title {
+     text-align: center;
+     margin-bottom: 20px;
+     /* font-size: 20px; */
+}
+
+/* .project .title {
+     margin: 50px;
+} */
+
+.container {
+     display: flex;
+     /* flex-wrap: wrap; */
+     justify-content: space-evenly;
+     /* align-items: center; */
+}
+
+#profile article {
+     /* float: left; */
+     width: 50%;
+     align-items: center;
+}
+
+#profile article h2 {
+     padding-bottom: 50px;
+     text-align: center;
+     font-size: 170%;
+}
+
+#profile p {
+     font-size: 20px;
+     line-height: 1.5em;
+     text-align: justify;
+}
+
+#profile aside {
+     /* float: right; */
+     width: 50%;
+     padding: 5px 10px;
+     margin: 0 auto;
+     /* max-height: 100px; */
+     box-sizing: border-box;
+}
+
+#profile aside img {
+     display: block;
+     width: 80%;
+     max-height: 65vh;
+     object-fit: cover;
+     object-position: center;
+     margin: 0 auto;
+     padding-bottom: 40px;
+}
+
+#resume {
+     color: #fff;
+     background-color: darkcyan;
+}
+
+.progress {
+     display: flex;
+     width: 250px;
+
+}
+
+.progress .progress-title {
+     width: 160px;
+     font-size: 14px;
+     margin-top: 5px;
+}
+
+.progress-bar {
+     width: 100%;
+     background-color: #e0e0e0;
+     padding: 4px;
+     margin: 5px 15px;
+     border-radius: 3px;
+     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar-fill {
+     display: block;
+     height: 12px;
+     border-radius: 3px;
+     transition: width 500ms ease-in-out;
+}
+
+
+#resume li {
+     /* list-style-image: url(assets/logosd.png); */
+     line-height: 40px;
+     list-style-type: none;
+     font-size: 14px;
+     display: flex;
+}
+
+#resume li img {
+     margin: 10px;
+}
+
+#resume li span {
+     margin-top: auto;
+     margin-bottom: auto;
+}
+
+.content-title {
+     text-align: center;
+     padding-bottom: 20px;
+}
+
+hr {
+     /* border: none; */
+     border: 1px solid hsla(200, 10%, 50%, 100);
+     height: auto;
+     width: auto;
+     margin-bottom: 20px;
+}
+
+.certificate {
+     margin-top: 20px;
+}
+
+.certificate .isi {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}
+
+.certificate .isi figure {
+     display: block;
+     max-width: 200px;
+     text-align: center;
+     margin: 15px 10px;
+}
+
+.project-content {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.project-content .card {
+     width: 20%;
+}
+
+.project-content .card p {
+     margin: 20px 0;
+     text-align: justify;
+}
+
+.project-content img {
+     width: 100%;
+     position: cover;
+}
+
+.card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+     padding: 10px 50px;
+     margin: 10px 20px;
+
+}
+
+.card:hover {
+     transform: scale(1.1);
+     transition-duration: 2s;
+}
+
+.form-contact {
+     margin: 0 auto;
+     padding: 77px 77px 87px;
+     width: 50%;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+     background-color: #a3bac231;
+}
+
+.form-group {
+     display: flex;
+     align-items: center;
+     margin-bottom: 48px;
+
+}
+
+.form-control {
+     border: none;
+     border-radius: 1em;
+     padding: 5px 15px;
+     display: block;
+     width: 100%;
+     font-size: 15px;
+     background: #a3bac249;
+
+}
+
+.form-control:hover {
+     background: rgb(72, 201, 201);
+}
+
+textarea {
+     resize: none;
+     height: 100px;
+}
+
+button {
+     border: none;
+     width: 162px;
+     height: 51px;
+     border: 2px solid rgb(255, 255, 255);
+     margin: auto;
+     margin-top: 60px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
+     background: #a3bac2a9;
+     color: rgb(255, 255, 255);
+     text-transform: uppercase;
+}
+
+button:hover {
+     border-color: transparent;
+     background-color: darkcyan;
+}
+
+footer {
+     width: 100%;
+     background-color: darkcyan;
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+     height: 20px;
+     font-size: 12px;
+}
+
+footer span {
+     float: left;
+     padding: 0 70px;
+}
+
+footer li {
+     float: right;
+     display: block;
+     /* list-style-type: none; */
+     padding: 0 10px;
+     list-style-image: url(assets/instagram.webp);
+}
+
+footer ul {
+     padding: 0 80px;
+}
+
+footer li a {
+     text-decoration: none;
+     color: white;
+}
+
+#Nama {
+     position: relative;
+     text-transform: uppercase;
+     margin: 50px 0;
+}
+
+#Nama::after {
+     content: "";
+     position: absolute;
+     width: 1px;
+     height: 100%;
+     border-right: 2px solid wheat;
+     animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+     0% {
+          opacity: 0;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     main {
+          max-width: 100%;
+     }
+
+     .jumbotron {
+          padding: 10px auto;
+          font-size: 25px;
+     }
+
+     #profile .container {
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+     }
+
+     #profile article {
+          width: 100%;
+     }
+
+     #profile aside {
+          width: 80%;
+
+     }
+
+     #resume .container {
+          flex-wrap: wrap;
+     }
+
+     .certificate .isi {
+          flex-wrap: wrap;
+     }
+
+     .certificate .isi figure {
+          padding-top: 10px;
+     }
+
+     .form-contact {
+
+          padding: 77px 77px 50px;
+          width: 70%;
+
+     }
+
+     footer ul {
+          display: none;
+     }
+
+     footer span {
+          float: none;
+     }
+
+
+
+
+}
+
+@media screen and (max-width: 680px) {
+     body {
+          overflow-x: hidden;
+     }
+
+     .navbar {
+
+          left: 0px;
+          height: 30vh;
+          top: 8vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          position: absolute;
+          transform: translateX(-100%);
+          transition: transform 0.5s ease-in;
+          z-index: -1;
+          padding-top: 30px;
+          justify-content: start;
+     }
+
+     .navbar li {
+          opacity: 0;
+          padding-top: 30px;
+     }
+
+     .icon {
+          display: block;
+     }
+
+     .jumbotron {
+          width: 30%;
+          font-size: 25px;
+          padding: 10px 20px;
+     }
+
+     .nav-active {
+          transform: translateX(0%);
+     }
+
+     .nav-deactive {
+          transform: translateX(-100%);
+     }
+
+     #profile p {
+          font-size: 16px;
+
+     }
+
+     @keyframes navLinkFade {
+          from {
+               opacity: 0;
+               transform: translateX(-50px);
+          }
+
+          to {
+               opacity: 1;
+               transform: translateX(0px);
+          }
+     }
+}
